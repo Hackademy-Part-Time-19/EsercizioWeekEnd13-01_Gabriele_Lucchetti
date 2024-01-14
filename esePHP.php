@@ -13,7 +13,7 @@ $password_verified = false;
 //<-Creo un ciclo do-while che ci chieda la password finche' non sia sicura
 do
     ($password = readline('Inserisci password sicura: '));
-while ($password_verified = false); {
+while ($password_verified == false); {
     if (checkPassword($password)) {
 
         //<-Aggiorno la variabile per far terminare il Do-while
@@ -102,5 +102,3 @@ function checkSpecial(string $password)
     }
     return false;
 }
-
-
